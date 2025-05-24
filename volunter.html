@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volunteer With Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .glass {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center px-4 py-10">
+
+  <div class="max-w-3xl w-full rounded-3xl shadow-2xl glass p-10">
+    <div class="text-center mb-10">
+      <h1 class="text-5xl font-extrabold text-blue-800 mb-3">Volunteer With Us</h1>
+      <p class="text-lg text-gray-700">Join our mission and help create lasting change in your community.</p>
+    </div>
+
+    <form action="https://formsubmit.co/info@thonmetpeace.gmail.com" method="POST" />
+
+      <div>
+        <label for="name" class="block text-sm font-semibold text-gray-700">Full Name</label>
+        <input type="text" id="name" name="name" required
+               class="mt-2 w-full rounded-xl border border-gray-300 p-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-semibold text-gray-700">Email Address</label>
+        <input type="email" id="email" name="email" required
+               class="mt-2 w-full rounded-xl border border-gray-300 p-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+      </div>
+
+      <div>
+        <label for="phone" class="block text-sm font-semibold text-gray-700">Phone Number</label>
+        <input type="tel" id="phone" name="phone"
+               class="mt-2 w-full rounded-xl border border-gray-300 p-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+      </div>
+
+      <div>
+        <label for="interests" class="block text-sm font-semibold text-gray-700">Volunteer Interests</label>
+        <select id="interests" name="interests"
+                class="mt-2 w-full rounded-xl border border-gray-300 p-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="events">Administration </option>
+          <option value="admin">Events Planner </option>
+          <option value="tutoring">Videographer</option>
+          <option value="outreach">Fundraiser  </option>
+          <option value="other">Grant writer </option>
+          <option value="other">Social Media Marketing  </option>
+          <option value="other">Volunteer coordination </option>
+          <option value="other">Marketing plans  </option>
+          <option value="other">Documentary    </option>
+          <option value="other">Writer    </option>
+          <option value="other">  Public Relation (PR)</option>
+
+          
+        </select>
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-semibold text-gray-700">Why do you want to volunteer?</label>
+        <textarea id="message" name="message" rows="4"
+                  class="mt-2 w-full rounded-xl border border-gray-300 p-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Tell us about your motivation and interests..."></textarea>
+      </div>
+
+      <button type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 shadow-md">
+        Send Application
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>

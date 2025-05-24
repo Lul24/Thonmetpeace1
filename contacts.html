@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <link rel="icon" type="image/x-icon" href="/images/logo1.jpg">
+    <style>
+        /* Custom styles for an exceptional design */
+        .contact-gradient {
+            background: linear-gradient(135deg, #a78bfa, #6d28d9); /* Purple hues */
+        }
+        .form-shadow {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        .input-border-focus {
+            outline: none;
+            border-color: #a78bfa;
+            box-shadow: 0 0 0 0.2rem rgba(167, 139, 250, 0.25);
+        }
+        .button-primary {
+            background-color: #6d28d9;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .button-primary:hover {
+            background-color: #8b5cf6;
+            transform: translateY(-2px);
+        }
+        .form-label {
+            color: #4a5568; /* Dark gray */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-20 px-6 md:px-0">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden md:grid md:grid-cols-2 md:gap-16">
+
+            <div class="relative contact-gradient py-12 px-8 md:px-12 flex items-center justify-center">
+                <div class="absolute inset-0 bg-purple-900 opacity-20 rounded-xl"></div>
+                <div class="relative z-10 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-white mb-6">Let's Work  Together</h2>
+                    <p class="text-lg text-purple-200 mb-8">We're always eager to connect and discuss new opportunities. Reach out and let's see how we can collaborate.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-purple-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m0 0l-7.89 5.26a2 2 0 01-2.22 0L3 8m0 0l1.89 6.3a2 2 0 01-1.16 2.55L2 15m13.84-1.45a2 2 0 011.16 2.55L21 15"></path></svg>
+                            <p class="text-purple-200">Email: thonmetpeace.gmail.com</p>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-purple-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
+                            <p class="text-purple-200">Office: PO Box 113198 Stamford, CT 06901</p>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-purple-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM11 13l-3-3m0 0l3-3m-3 3h11"></path></svg>
+                            <p class="text-purple-200">+01-914-335-1308</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <div class="bg-white py-12 px-8 md:px-12 form-shadow rounded-xl">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-8">Send Us a Message</h2>
+              <form action="https://formsubmit.co/thonmetpeace@gmail.com" method="POST" class="space-y-6">
+    <!-- Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Redirect to a thank-you page after submit (optional) -->
+    <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+    <div>
+        <label for="name" class="block text-sm font-bold form-label mb-2">Your Name</label>
+        <input type="text" id="name" name="name" class="shadow-sm appearance-none border rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none input-border-focus" placeholder="Enter your name" required>
+    </div>
+    <div>
+        <label for="email" class="block text-sm font-bold form-label mb-2">Your Email</label>
+        <input type="email" id="email" name="email" class="shadow-sm appearance-none border rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none input-border-focus" placeholder="Enter your email" required>
+    </div>
+    <div>
+        <label for="subject" class="block text-sm font-bold form-label mb-2">Subject</label>
+        <input type="text" id="subject" name="subject" class="shadow-sm appearance-none border rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none input-border-focus" placeholder="What's this about?" required>
+    </div>
+    <div>
+        <label for="message" class="block text-sm font-bold form-label mb-2">Message</label>
+        <textarea id="message" name="message" rows="5" class="shadow-sm appearance-none border rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none input-border-focus" placeholder="Tell us more..." required></textarea>
+    </div>
+    <button type="submit" class="button-primary text-white font-semibold py-3 px-6 rounded-md focus:outline-none shadow-md w-full">
+        Let's Talk
+    </button>
+</form>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
