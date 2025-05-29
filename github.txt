@@ -1,0 +1,13 @@
+
+34.9.129.176/32
+
+34.139.255.247/32
+
+git remote add origin https://github.com/Lul24/Thonmetpeace1.git
+
+git remote add origin https://github.com/Lul24/Thonmetpeace1.git
+
+git remote add origin https://github.com/Lul24/Thonmetpeace1.git
+
+<form action="https://formsubmit.co/info@thonmetpeace.gmail.com" method="POST" />
+
